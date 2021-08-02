@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TODO BOARD DESIGN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+ <script src  ="app.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="container-fluid1" id="header" >
+  <h1>TO DO BOARD</h1>
+  
+  <div class="container-fluid">
+    <!-- Control the column width, and how they should appear on different devices -->
+   
+    <div class="row ">
+      <div class="col" style="background-color: violet;">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list1" ondblclick="onTaskListClick(id)" >
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list2"ondblclick="onTaskListClick(id)" >
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check2" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list3"ondblclick="onTaskListClick(id)" onclick="checkBoxClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check3" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col" style="background-color:orange;">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list4"ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check4" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list5"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check5" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item" id="list6"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check6" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+      
+      <div class="col" style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list7" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check7" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list8"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check8" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list9"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check9" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange" >
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list10" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check10" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list11"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check11" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list12"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check12" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col" style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list13" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check13" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list14"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check14" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list15"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check15" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col" style="background-color:orange" >
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list16" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check16" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list17"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check17" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list18"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check18" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col" style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list19" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check19" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list20"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check20" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list21"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check21" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list22" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check22" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list23"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check23" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list24"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check24" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list25" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check25" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list26"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check26" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list27"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check27" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list28" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check28" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list29"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check29" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list30"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check30" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list31" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check31" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list32"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check32" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list33"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check33" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list34" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check34" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list35"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check35" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list36"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check36" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list37" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check37" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list38"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check38" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list39"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check39" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list40" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check40" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list41"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check41" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list42"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check42" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list43" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check43" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list44"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check44" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list45"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check45" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list46" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check46" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list47"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check47" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list48"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check48" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list49" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check49" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list50"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check50" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list51"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check51" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list52" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check52" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list53"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check53" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list54"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check54" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list55" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check55" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list56"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check56" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list57"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check57" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list58" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check58" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list59"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check59" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list60"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check60" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list61" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check61" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list62"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check62" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list63"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check63" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list64" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check64" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list65"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check65" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list66"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check66" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list67" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check67" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list68"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check68" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list69"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check69" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list70" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check70" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list71"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check71" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list72"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check72" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list73" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check73" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list74"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check74" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list75"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check75" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list76" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check76" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list77"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check77" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list78"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check78" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list79" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check79" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list80"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check80" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list81"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check81" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list82" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check82" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list83"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check83" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list84"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check84" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list85" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check85" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list86"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check86" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list87"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check87" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list88" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check88" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list89"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check89" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list90"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check90" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list91" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check91" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list92"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check92" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list93"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check93" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list94" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check94" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list95"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check95" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list96"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check96" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list97" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check97" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list98"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check98" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list99"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check99" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list100" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check100" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list101"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check101" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list102"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check102" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list103" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check103" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list104"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check104" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list105"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check105" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list106" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check106" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list107"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check107" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list108"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check108" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list109" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check109" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list110"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check110" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list111"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check111" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list112" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check112" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list113"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check113" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list114"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check114" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list115" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check115" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list116"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check116" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list117"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check117" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list118" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check118" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list119"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check119" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 
+                </label>
+          	</li>
+            <li class="list-group-item"id="list120"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check120" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list121" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check121" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list122"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check122" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list123"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check123" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list124" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check124" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list125"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check125" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list126"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check126" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list127" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check127" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list128"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check128" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list129"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check129" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list130" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check130" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list131"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check131" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list132"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check132" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list133" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check133" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list134"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check134" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list135"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check135" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list136" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check136" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list137"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check137" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list138"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check138" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list139" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check139" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list140"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check140" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list141"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check141" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list142" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check142" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list143"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check143" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list144"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check144" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list145" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check145" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list146"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check146" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list147"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check147" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list148" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check148" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list149"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check149" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list150"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check150" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list151" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check151" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list152"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check152" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list153"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check153" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list154" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check154" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list155"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check155" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list156"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check156" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list157" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check157" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list158"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check158" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list159"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check159" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list160" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check160" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list161"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check161" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list162"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check162" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list163" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check163" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list164"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check164" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list165"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check165" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list166" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check166" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list167"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check167" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list168"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check168" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list169" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check169" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list170"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check170" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list171"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check171" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list172" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check172" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list173"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check173" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list174"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check174" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list175" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check175" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list176"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check176" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list177"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check177" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list178" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check178" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list179"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check179" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list180"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check180" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list181" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check181" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list182"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check182" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list183"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check183" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list184" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check184" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list185"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check185" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list186"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check186" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:orange">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list187" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check187" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list188"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check188" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list189"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check189" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col"style="background-color:violet">
+      	<br>      
+      	<ul class="list-group">
+          <div><h4>My Task</h4></div>
+        	<li class="list-group-item" id="list190" ondblclick="onTaskListClick(id)">
+            	<label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check190" name="option1" value="something" 				 onClick="checkBoxClick(id)"
+                >Task 1
+                </label>
+            </li>
+            <li class="list-group-item" id="list191"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check191" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 2
+                </label>
+          	</li>
+            <li class="list-group-item"id="list192"ondblclick="onTaskListClick(id)">
+              <label for="check1">
+                  <input type="checkbox" class="form-check-input" id="check192" name="option1" value="something"
+                  onClick="checkBoxClick(id)">Task 3
+              </label>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+
+
